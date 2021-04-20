@@ -1,0 +1,217 @@
+/* always import fonts at the top of your style sheet*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body {
+  background-color: rgba(213, 190, 140, 0.5);
+  margin-left: 8%;
+  margin-right: 8%;
+  transition-property: margin, font-size;
+  transition-duration: 0.5s;
+}
+
+section {
+  background-color: rgba(176, 165, 160, 1);
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+header {
+  background-color: khaki;
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url(images/carbocyaninedyes.png);
+  background-size: cover;
+  position: relative;
+}
+
+div.expanded{
+  display:none;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(239, 65, 35, 0.5);
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 90%;
+
+
+}
+
+.expanded p > h2 {
+  text-align: center;
+}
+
+
+
+#compoundimage {
+  position: absolute;
+  top: 50px;
+} 
+
+div#title {
+  font-family: "Fjalla One", Tahoma, serif;
+  font-size: 2em;
+  color: maroon;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  /* because the containing element is relative, this position is absolute with respect to that element, 
+    not the viewport*/
+  top: 25px;
+  left: 30px;
+  width: 60%;
+}
+
+div.navbar {
+  display: flex;
+  border: 1px solid brown;
+  padding: 0.5em;
+  justify-content: space-around;
+}
+
+div.nav {
+  font-family: "Roboto Slab", "Gill Sans MT", sans-serif;
+  font-size: 2.5vw;
+  /* units of viewport width; the font size will change as the viewport scales */
+  text-align: center;
+  border: 2px dotted green;
+  width: 30%;
+  background-color: rgba(239, 65, 35, 0.5);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+img.dip {
+  width: 70%;
+  max-width: 300px;
+  margin-top: 1em;
+  transition-property: width;
+  transition-duration: 0.5s;
+}
+
+img#emblem {
+  position: absolute;
+  width: 150px;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+
+
+
+@media screen and (max-height: 24em) { /* instead of px, use em as units; em is relative to font-size--12-16px*/
+  /* these rules take effect when the viewport is small in height--landscape on phone */
+  body {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 0.9em;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  header {
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  div.navbar {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  div.chemimage {
+    text-align: center;
+    width: fit-content;
+  }
+
+  div.chemname {
+    text-align: center;
+    width: 6em;
+  }
+
+
+  div#title {
+    font-size: 4vw;
+    position: static;
+    margin: 0.3em;
+    width: 80%;
+  }
+
+  img#emblem {
+    width: 40%;
+  }
+
+  img.dip {
+    width: 70%;
+    height: auto;
+  }
+
+  
+
+}
+
+
+@media screen and (max-width: 30em) {
+  /* these rules take effect when the viewport is small in width--portrait on phone */
+  body {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 0.9em;
+  }
+  section {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  header {
+    height: 150px;
+    margin-bottom: 5px;
+  }
+
+  div#title {
+    font-size: 6.5vw;
+
+  }
+
+  div.nav {
+    font-size: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  div.navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.chemimage {
+    text-align: center;
+    width: fit-content;
+  }
+
+  div.chemname {
+    text-align: center;
+    width: 6em;
+  }
+
+  img#emblem {
+    width: 20%;
+  }
+
+  img.dip {
+    width: 6em;
+  }
+}

@@ -3,9 +3,26 @@
 body {
     background-color: oldlace;
     font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+div.courselist {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.courselisttitle {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.course {
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .myclass {
@@ -60,5 +77,23 @@ ol li.float {
     float: left;
     width: 20%;
     background-color: lavender;
-    margin-right: 1em;
+    margin-right: 40px;
+    border: 3px solid coral;
+}
+
+
+header, footer {
+    display: flex;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+        border: 1px solid brown;
+    background-color: wheat;
+}
+
+div.nav {
+    width: 30%;
+       border: 2px dotted black;
+    text-align: center;
+    font-size: 2.5vw;
 }

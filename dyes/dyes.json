@@ -1,0 +1,19 @@
+{
+    "dyes": [
+        {
+            "name": "Crystal Violet",
+            "manufacturer": "Coleman and Bell",
+            "bottleimage": "images/Crystal_Violet_Coleman_and_Bell_small.png",
+            "alt": "Bottle of Crystal Violet",
+            "structure": "images/crystalviolet.pdb"
+        },
+
+        {
+            "name": "Rhodamine B",
+            "manufacturer": "Eastman Kodak",
+            "bottleimage": "images/Rhodamine_B_Eastman_small.png",
+            "alt": "Bottle of Rhodamine B",
+            "structure": "images/rhodamineb.pdb"
+        }
+    ]
+}
