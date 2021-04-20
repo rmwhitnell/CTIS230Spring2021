@@ -1,9 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600&display=swap');
+
 body {
     background-color: oldlace;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+.myclass {
+    color:moccasin;
+}
+
+p {
+    font-size:0.9em;
+}
+
+p.courses {
+    font-style: italic;
+}
+
+p.courses:hover {
+    font-size: 1.1em;
+}
+
+p.responsibilities {
+    text-indent: 1em;
+}
+
 
 h2 {
     color:darkcyan;
+}
+
+a {
+    color:rgb(51, 212, 191);
+}
+
+a:hover {
+    color:goldenrod;
+}
+
+a:visited {
+    color:midnightblue;
+}
+
+a:active{
+    color:gold;
+}
+
+img#imgjchemed {
+    width: 20%;
+    border: 0.2em brown solid;
+    float: right;
+    margin-left: 0.5em;
+}
+
+ol li.float {
+    float: left;
+    width: 20%;
+    background-color: lavender;
+    margin-right: 1em;
 }
