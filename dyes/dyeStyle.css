@@ -55,7 +55,7 @@ div#title {
   font-size: 2em;
   color: maroon;
   background-color: rgba(200, 200, 200, 0.5);
-  position: absolute;
+  position:absolute;
   /* because the containing element is relative, this position is absolute with respect to that element, 
     not the viewport*/
   top: 25px;
@@ -133,6 +133,7 @@ img#emblem {
     width: fit-content;
   }
 
+  
   div.chemname {
     text-align: center;
     width: 6em;
@@ -201,6 +202,8 @@ img#emblem {
     text-align: center;
     width: fit-content;
   }
+
+
 
   div.chemname {
     text-align: center;
