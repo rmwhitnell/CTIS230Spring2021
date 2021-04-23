@@ -4,13 +4,23 @@ ourButton = document.getElementById("myButton");
 ourTextField = document.getElementById("myinput");
 myCardDiv = document.getElementById("card");
 myCardImage = document.getElementById("cardimage");
+addImageButton = document.getElementById("addImage");
 
 myCardDiv.addEventListener("click", expandImage);
+addImageButton.addEventListener("click", makeNewImage);
 
 ourText.addEventListener("mouseover", onMouseOver);
 ourText.addEventListener("mouseout", onMouseOut);
 ourButton.addEventListener("click", onClick);
 ourTextField.addEventListener("change", changeText);
+
+function makeNewImage() {
+    newImg= document.createElement("img");
+    newImg.src = "images/GC_emblem_CMYK187.png";
+    newImg.style.width = "25%";
+    newImgDiv = document.getElementById("newimage");
+    newImgDiv.appendChild(newImg);
+}
 
 function expandImage() {
     /* manipulate the position of the div and the size of the image */
