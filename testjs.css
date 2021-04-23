@@ -1,0 +1,43 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  h1, p, button, input {
+    text-align:center;
+    font-family: "Gill Sans", "Gill Sans MT", Helvetica, sans-serif;
+  }
+
+  h1#larger {
+      font-size: 4em;
+  }
+
+  h1#header{
+      font-size: 2em;
+  }
+  
+  input#myinput {
+    font-size: 1.5em;
+  }
+  
+  button {
+    font-size: 2em;
+  }
+  
+  p { 
+    width: fit-content;
+    border: 0.2em brown solid;
+    margin: 0 auto;
+    padding: 0.3em;
+  }
+
+  img#cardimage {
+      width: 50px;
+  }
+
+  div#card {
+    display: none;
+    width: fit-content;
+    border: 2px solid green;
+  }
+  
