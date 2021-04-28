@@ -1,18 +1,38 @@
 ourText = document.getElementById("text");
 ourHeader = document.getElementById("header");
-ourButton = document.getElementById("myButton");
+ourButton = document.getElementById("myButton"); /* find the element with the id myButton and store it away*/
 ourTextField = document.getElementById("myinput");
 myCardDiv = document.getElementById("card");
+myCard2Div = document.getElementById("card2");
 myCardImage = document.getElementById("cardimage");
 addImageButton = document.getElementById("addImage");
+/* get the largview div and store it away */
+theLargeView = document.getElementById("largeview");
 
-myCardDiv.addEventListener("click", expandImage);
+/*myCardDiv.addEventListener("click", expandImage);*/
+myCardDiv.addEventListener("click", makeBigImage);
+myCard2Div.addEventListener("click", makeBigImage);
 addImageButton.addEventListener("click", makeNewImage);
+theLargeView.addEventListener("click", hideBigImage), 
 
 ourText.addEventListener("mouseover", onMouseOver);
 ourText.addEventListener("mouseout", onMouseOut);
+console.log(ourButton);
 ourButton.addEventListener("click", onClick);
 ourTextField.addEventListener("change", changeText);
+
+function hideBigImage() {
+    theLargeView.classList.add("dontshow");
+    theLargeView.innerHTML = "";
+}
+
+function makeBigImage(event) { /*event contains information about what generated the event*/
+    console.log(event);
+    bigimage = document.createElement("img");
+    bigimage.src = event.target.src;
+    theLargeView.appendChild(bigimage);
+    theLargeView.classList.remove("dontshow");
+}
 
 function makeNewImage() {
     newImg= document.createElement("img");
@@ -25,14 +45,14 @@ function makeNewImage() {
 function expandImage() {
     /* manipulate the position of the div and the size of the image */
     if (myCardDiv.style.position == "") {
-        myCardDiv.style.position = "absolute";
-        myCardDiv.style.top = "100px";
-        myCardDiv.style.left = "100px";
+        myCardDiv.style.position = "fixed";
+        myCardDiv.style.top = "10%";
+        myCardDiv.style.left = "60%";
         /* make the card image its original size */
         myCardImage.style.width = "auto";
-        myCardImage.src = "images/2_of_diamonds.png";
+      /*  myCardImage.src = "images/2_of_diamonds.png";*/
     }
-    else if (myCardDiv.style.position == "absolute") {
+    else if (myCardDiv.style.position == "fixed") {
         myCardDiv.style.position = "";
         myCardImage.style.width = "50px";
         myCardImage.src = "images/2_of_clubs.png";
@@ -51,6 +71,7 @@ function onClick() {
     /* For example, change the id value to larger*/
     ourHeader.setAttribute("id", "larger");
     myCardDiv.style.display = "block";
+    myCard2Div.style.display = "block";
 }
 
 function onMouseOver() {

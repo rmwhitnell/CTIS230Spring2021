@@ -31,13 +31,27 @@ body {
     padding: 0.3em;
   }
 
-  img#cardimage {
+  img#cardimage, img#cardimage2 {
       width: 50px;
   }
 
-  div#card {
+  div#card, div#card2 {
     display: none;
     width: fit-content;
     border: 2px solid green;
+  }
+
+  div#largeview {
+    position: fixed;
+    top: 10%;
+    left: 0%;
+  }
+
+  div#largeview.dontshow {
+    display: none;
+  }
+
+  div#largeview img {
+    width: 100vw;
   }
   
