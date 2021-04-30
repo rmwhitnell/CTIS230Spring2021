@@ -6,6 +6,15 @@ body {
     font-size: 1.1em;
     margin-left: 15%;
     margin-right: 15%;
+    transition-property: margin-left, margin-right, background-color;
+    transition-duration: 2s;
+}
+
+h1 {
+    text-align: center;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+    transform: translate(50px, -50px);
 }
 
 div.courselist {
@@ -52,19 +61,16 @@ h2 {
 
 a {
     color:rgb(51, 212, 191);
+    text-decoration: none;
+    border-bottom: rgb(51, 212, 191) transparent 1px;
+    transition-property: border-bottom;
+    transition-duration: 0.5s;
 }
 
 a:hover {
-    color:goldenrod;
+    border-bottom: rgb(51, 212, 191) solid 1px;
 }
 
-a:visited {
-    color:midnightblue;
-}
-
-a:active{
-    color:gold;
-}
 
 img#imgjchemed {
     width: 20%;
@@ -93,7 +99,7 @@ header, footer {
 
 div.nav {
     width: 30%;
-       border: 2px dotted black;
+     /*  border: 2px dotted black;*/
     text-align: center;
     font-size: 2.5vw;
 }
