@@ -18,6 +18,7 @@ var material = new THREE.MeshBasicMaterial({
     color: 0x00dd00
 });
 var cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
 
 camera.position.z = 5;
 
