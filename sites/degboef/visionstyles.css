@@ -1,0 +1,226 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+}
+
+h2{
+    text-decoration: double underline;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: grey solid;
+    background-color: grey;
+}
+
+img {
+    position: absolute;
+    display: flex;
+    border: none;
+    height: auto;
+    width: 200px;
+    padding: 15px;
+    align-items: center;
+}
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-wrap: break-word;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.Menu-Bar{
+    background: orange;
+    text-align: center;
+
+}
+
+.Menu-Bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.Menu-Bar li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  .Menu-Bar ul li a {
+    text-decoration: black;
+    color: black;
+  }
+  
+  .Active, .Menu-Bar ul li:hover{
+    background-color:none; 
+    border-radius: 3px;
+  }
+
+  .Menu-Bar .fa {
+      margin-right: 6px;
+  }
+
+.Sub-Menu-1{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li a:hover {
+    color: gray;
+}
+
+.Sub-Menu-2{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul li a:hover {
+    color: gray;
+}
+
+.Sub-Menu-3{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul li a:hover {
+    color: gray;
+}
+
+.Sub-Menu-4{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul li a:hover {
+    color: gray;
+}
+
+.footer-bottom{
+    background:brown;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}

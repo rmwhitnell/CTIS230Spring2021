@@ -1,0 +1,366 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+h5{
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 150;
+    text-align: center;
+    box-sizing: border-box;
+    display: table;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 300px;
+  border: 15px none;
+  padding: 50px;
+  margin: 20px;
+}
+
+h6{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 150;
+    text-align: center;
+    width: 300px;
+  border: 15px ;
+  padding: 50px;
+  margin: 20px;
+  display: table;
+}
+
+
+h3{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 150;
+    text-align: center;
+    width: 300px;
+  border: 15px ;
+  padding: 50px;
+  margin: 20px;
+  display: table;
+}
+
+.quotecontainer{
+    display: flex;
+}
+
+.quotes{
+    flex-basis: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+video{
+    display:block;
+    margin:  auto;
+    width: 400px;
+   
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50% auto;
+}
+
+.column {
+    float: left;
+    width: 33.33% auto;
+    padding: 5px;
+  }
+  
+
+  .side-side::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .side-side {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+body {
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-wrap: break-word;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+
+
+.Menu-Bar{
+    background: orange;
+    text-align: center;
+
+}
+
+.Menu-Bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.Menu-Bar li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  .Menu-Bar ul li a {
+    text-decoration: black;
+    color: black;
+  }
+  
+  .Active, .Menu-Bar ul li:hover{
+    background-color:none; 
+    border-radius: 3px;
+  }
+
+  .Menu-Bar .fa {
+      margin-right: 6px;
+  }
+
+.Sub-Menu-1{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-1 ul li a:hover {
+    color: gray;
+}
+
+.Sub-Menu-2{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-2 ul li a:hover {
+    color: gray;
+}
+
+.Sub-Menu-3{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-3 ul li a:hover {
+    color: gray;
+}
+
+.Sub-Menu-4{
+    display: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul{
+    display: block;
+    margin: 10px;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul li {
+    width: fit-content;
+    padding: 12px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul li :last-child {
+    border-bottom: none;
+}
+
+.Menu-Bar ul li:hover .Sub-Menu-4 ul li a:hover {
+    color: gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: orange;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: grey;
+    height: auto;
+    width: 90 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 40px ;
+    color: black;
+}
+
+.Footer-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+
+.Footer-content h2{
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3em;
+}
+
+.Footer-content p{
+    max-width: 500px;
+    margin: 10 px;
+    line-height: 15px;
+    font-size: 14px;
+}
+
+.Contact{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3em;
+}
+
+.Contact li{
+     margin: 10px;
+}
+
+.footer-bottom{
+    background:brown;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    text-align: center;
+    width: auto;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }

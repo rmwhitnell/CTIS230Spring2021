@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: orange;
+    font-size: 14px;
+    font-family: 'New Tegomin', serif;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: brown;
+    display: flex auto;
+}
+
+.contact-left{
+        flex-basis: 60%;
+        padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40% auto;
+    padding: 40px auto;
+    background: red;
+    color: black;
+
+}
+
+h1{
+    text-decoration: double underline;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: grey solid;
+    background-color: grey;
+}
+
+.container p{
+    margin-bottom: 40px ;
+}
+
+.input-row{
+    display:table-row;
+    justify-content: space-between;
+    margin-bottom: 20px ;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+    display:inline-flexbox;
+}
+
+input{
+    width: 100%;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding: 10% auto;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 15px ;
+    display:table;
+    color: black;
+}
+
+button{
+    background: grey;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 30px ;
+    border-radius: 30px auto;
+    margin-top: 20px ;
+    box-shadow: 0px 5px 15px 0p;
+}
+
+.contact-left h3{
+    color: white;
+    font-weight: 600;
+    margin-bottom:30px ;
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom:30px ;
+}
+
+tr rd:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+.footer-bottom{
+    background:brown;
+    width: 100 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
