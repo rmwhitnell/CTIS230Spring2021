@@ -1,0 +1,9 @@
+h1.chemicalname {
+    font-size: 1.8em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+img {
+    box-shadow: 10px 10px 15px darkgreen;
+    width: 100px;
+}
